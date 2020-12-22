@@ -1,0 +1,93 @@
+<div class="tablet">
+  <div class="rectangle left">
+    <span class="title">SHOP</span>
+
+    <span class="labels-helmet">Helmet</span>
+    <app-select-box
+      [items] = helmets
+      [keyName]="'helmet'"
+      class = "select-helmet select-share select-share-font select-share-option-icon"
+      (onEquipmentChange)="equipmentChanged($event,'helmet')"
+      >
+    </app-select-box>
+
+    <span class="labels-chest">Chest</span>
+    <app-select-box
+      [items] = chests
+      [keyName]="'chest'"
+      class = "select-chest select-share select-share-font select-share-option-icon"
+      (onEquipmentChange)="equipmentChanged($event,'chest')"
+      >
+    </app-select-box>
+
+    <span class="labels-gloves">Gloves</span>
+    <app-select-box
+      [items] = gloves
+      [keyName]="'gloves'"
+      class = "select-gloves select-share select-share-font select-share-option-icon"
+      (onEquipmentChange)="equipmentChanged($event,'glove')"
+      >
+    </app-select-box>
+
+    <span class="labels-boots">Boots</span>
+    <app-select-box
+      [items] = boots
+      [keyName]="'boots'"
+      class = "select-boots select-share select-share-font select-share-option-icon"
+      (onEquipmentChange)="equipmentChanged($event,'boots')"
+      >
+    </app-select-box>
+
+
+    <span class="labels-sword">Sword</span>
+    <app-select-box
+      [items] = swords
+      [keyName]="'sword'"
+      class = "select-sword select-share select-share-font select-share-option-icon"
+      (onEquipmentChange)="equipmentChanged($event,'sword')"
+      >
+    </app-select-box>
+
+
+    <span class="line"></span>
+
+    <div class="equipment">Equiepment cost: {{Counter({},data)[0]}}</div>
+
+  </div>
+
+
+  <div class="rectangle right">
+    <img class="girl"  src={{data.helmet.img?girlImageUnderHelmet:girlImage}}/>
+    <img *ngIf="data.helmet.img" class="helmet" src={{data.helmet.img}}>
+    <img *ngIf="data.chest.img" class="chest" src={{data.chest.img}}>
+    <img *ngIf="data.glove.img" class="glove" src={{data.glove.img}}>
+    <img *ngIf="data.boots.img" class="boots" src={{data.boots.img}}>
+    <img *ngIf="data.sword.img" class="sword" src={{data.sword.img}}>
+    <div class="about-voin">
+      <div>
+        <label>Name:</label>
+        <span style="margin-left: 39px;">{{girlName}}</span>
+      </div>
+      <div style="display: flex">
+        <label style="top:430px;left:80px;right:254px">Stats:</label>
+        <div style="display: grid; padding-left: 6px;" *ngFor="let info of [person]">
+          <span style="margin-left: 39px;">{{Counter(info,data)[1]}}</span>
+          <span style="margin-left: 39px;margin-top:5px;">{{Counter(info,data)[2]}}</span>
+          <span style="margin-left: 39px;margin-top:5px;">{{Counter(info,data)[3]}}</span>
+
+        </div>
+        <div style="display: grid">
+          <span style="margin-left: 39px;">
+            <img style="width: 18px;height: 18px" src="../assets/images/health.png"/>
+            ‍</span>
+          <span style="margin-left: 39px;margin-top:5px;">
+            <img style="width: 18px;height: 18px" src="../assets/images/armor.png"/>
+          </span>
+          <span style="margin-left: 39px;margin-top:5px;">
+            <img style="width: 18px;height: 18px" src="../assets/images/attack.png"/>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

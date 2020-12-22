@@ -1,0 +1,294 @@
+/* You can add global styles to this file, and also import other style files */
+.tablet {
+  /* Tablet – 1024 px */
+
+  position: relative;
+  width: 1024px;
+  height: 768px;
+
+  background: #1C6565;
+}
+.rectangle {
+  position: absolute;
+  width: 370px;
+  height: 551px;
+  top: 84px;
+  background: #F9E88E;
+  border-radius: 4px;
+
+}
+.left {
+  left: 127px;
+}
+
+.right {
+  left: 527px;
+}
+ .title {
+   /* Shop */
+
+   position: absolute;
+   width: 64px;
+   height: 28px;
+   left: 153px;
+   right: 153px;
+   top: 27px;
+
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 28px;
+   text-align: center;
+   text-transform: uppercase;
+
+   color: #000000;
+ }
+
+ .labels-helmet {
+   position: absolute;
+   width: 59px;
+   height: 36px;
+   left: 50px;
+   top: 93px;
+
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+   color: #000000;
+
+ }
+
+ .labels-chest {
+   /* Chest */
+
+   position: absolute;
+   width: 47px;
+   height: 36px;
+   left: 50px;
+   top: 149px;
+
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 14px;
+   line-height: 16px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+   color: #000000;
+
+
+ }
+ .labels-gloves {position: absolute;
+    width: 55px;
+    height: 36px;
+    left: 50px;
+    top: 205px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+
+    color: #000000;
+
+  }
+.labels-boots {
+  position: absolute;
+  width: 47px;
+  height: 36px;
+  left: 50px;
+  top: 261px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  color: #000000;
+
+}
+
+.labels-sword {
+  position: absolute;
+  width: 51px;
+  height: 36px;
+  left: 50px;
+  top: 317px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  color: #000000;
+}
+
+select option{
+  background:white;
+}
+
+.select-share select {
+  position: absolute;
+  width: 190px;
+  height: 36px;
+  left: 130px;
+  border: 1px solid #727272;
+  border-radius: 4px;
+}
+.select-share-font select{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  text-align-last: center;
+}
+
+.select-share-option-icon select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none !important;
+
+  background: url("icon.png") right no-repeat ;
+  background-color: white;
+  background-transparency: 0.5;
+  background-position: right 14px top 16px;
+  background-size: 8px 4px;
+}
+
+.select-helmet select  {
+  top: 93px;
+
+}
+
+.select-chest select  {
+  top: 149px;
+
+}
+
+.select-gloves select  {
+  top: 205px;
+
+}
+
+.select-boots select  {
+  top: 261px;
+
+}
+
+.select-sword select  {
+  top: 317px;
+
+}
+
+.line {
+  position: absolute;
+  width: 270px;
+  height: 0px;
+  left: 50px;
+  top: 378px;
+
+  border: 1px solid #727272;
+}
+
+.equipment {
+
+  position: absolute;
+  width: 270px;
+  height: 36px;
+  left: 50px;
+  top: 403px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+
+  color: #000000;
+}
+ .girl {
+   position: absolute;
+   width: 135px;
+   height: 317px;
+   left: 118px;
+   right: 117px;
+   top: 41px;
+
+ }
+.helmet {
+  position: absolute;
+  width: 80px;
+  height: 90px;
+  left: 127px;
+  right: 117px;
+  top: 38px;
+}
+.chest {
+   position: absolute;
+   width: 105px;
+   height: 98px;
+   left: 135px;
+   top: 128px;
+ }
+
+.glove {
+  position: absolute;
+  width: 175px;
+  height: 100px;
+  left: 95px;
+  top: 188px;
+  z-index: 1;
+ }
+
+.boots {
+  position: absolute;
+  width: 137px;
+  height: 95px;
+  left: 110px;
+  top: 290px;
+   }
+
+.sword {
+  position: absolute;
+  width: 267px;
+  height: 119px;
+  left: 7px;
+  top: 215px;
+}
+
+.about-voin {
+  position: absolute;
+  top: 394px;
+  left: 80px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+}

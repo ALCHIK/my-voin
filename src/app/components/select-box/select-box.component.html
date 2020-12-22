@@ -1,0 +1,7 @@
+<div class="">
+  <select [(ngModel)]="equipment" (change)="onChange()">
+    <option *ngIf="!equipment" value="" hidden disabled></option>
+    <option *ngIf="equipment" value="">Take off your {{keyName}}</option>
+    <option *ngFor="let item of items" [ngValue]="item">{{item.name}}</option>
+  </select>
+</div>
